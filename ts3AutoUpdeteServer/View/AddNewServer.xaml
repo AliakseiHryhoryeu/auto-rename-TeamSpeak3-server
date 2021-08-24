@@ -1,0 +1,24 @@
+﻿<Window x:Class="ts3AutoUpdeteServer.View.AddNewServer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ts3AutoUpdeteServer.View"
+        mc:Ignorable="d"
+        Title="Add new server" Height="300" Width="430" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label FontSize="15" >Enter id server:*</Label>
+        <TextBox x:Name="AddServerIdTxtbox" FontSize="15" Margin="200 10 0 0" Text=""  Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Label Margin="0 40 0 0" FontSize="15" >Enter login:*</Label>
+        <TextBox x:Name="AddServerLoginTxtbox" FontSize="15" Margin="200 40 0 0" Text=""  Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Label Margin="0 75 0 0" FontSize="15" >Enter password:*</Label>
+        <TextBox x:Name="AddServerPasswordTxtbox" FontSize="15" Margin="200 75 0 0" Text=""  Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Label Margin="0 110 0 0" FontSize="15" >Enter ServerIp:*</Label>
+        <TextBox x:Name="AddServerIpTxtbox" FontSize="15" Margin="200 110 0 0" Text=""  Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Label Margin="0 145 0 0" FontSize="15" >Enter Name1:*</Label>
+        <TextBox x:Name="AddServerName1Txtbox" FontSize="15" Margin="200 145 0 0" Text=""  Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Label Margin="0 175 0 0" FontSize="15" >Enter Name2:*</Label>
+        <TextBox x:Name="AddServerName2Txtbox" FontSize="15" Margin="200 180 0 0" Text=""  Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Button x:Name="AddServerButton" FontSize="20" Width="200" Height="40" Margin="100,220,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_AddServer">Add</Button>
+    </Grid>
+</Window>

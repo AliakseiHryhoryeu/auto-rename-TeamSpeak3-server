@@ -1,0 +1,14 @@
+﻿<Window x:Class="ts3AutoUpdeteServer.View.DeleteServer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ts3AutoUpdeteServer.View"
+        mc:Ignorable="d"
+        Title="Delete server" Height="140" Width="440" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label FontSize="15" >Enter id server:*</Label>
+        <TextBox x:Name="DeleteServerIdTxtbox" FontSize="15" Margin="200 10 0 0" Text=""  Height="25" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Button x:Name="DeleteServerButton" FontSize="20" Width="200" Height="35" Margin="86,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_DeleteServer">Delete</Button>
+    </Grid>
+</Window>

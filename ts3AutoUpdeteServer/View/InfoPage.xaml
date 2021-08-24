@@ -1,0 +1,38 @@
+﻿<Window x:Class="ts3AutoUpdeteServer.View.InfoPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ts3AutoUpdeteServer.View"
+        mc:Ignorable="d"
+        Title="Information" Height="300" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Label FontSize="18" FontWeight="Bold" HorizontalAlignment="Center">Information</Label>
+            <TextBlock  FontSize="15" Margin="5,30,40,0">In this program uses the approach "Code first". <LineBreak/>
+            Database communication using Entity Framework. <LineBreak/>
+            The code was created on C# in Visual Studio 2019. <LineBreak/>
+            The program interface is made using WPF.</TextBlock>
+            <Label Margin="0 110 0 0" FontSize="15" >Free hosting TeamSpeak 3:</Label>
+            <TextBox x:Name="HostingSiteTxtbox" FontSize="15" Margin="200 115 0 0" Text="https://ts3.cloud/"  Height="25" Width="370" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Label FontSize="18" FontWeight="Bold" HorizontalAlignment="Center">Contacts</Label>
+            <Label Margin="0 40 0 0" FontSize="15" >LinkedIn</Label>
+            <TextBox x:Name="ContactsLinkedInTxtbox" FontSize="15" Margin="200 45 0 0" Text="https://www.linkedin.com/in/aliaksei-hryhoryeu-15a3a6219/"  Height="25" Width="370" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Margin="0 70 0 0" FontSize="15" >E-mail</Label>
+            <TextBox x:Name="ContactsEmailTxtbox" FontSize="15" Margin="200 75 0 0" Text="aliaksei.hryhoryeu.1@gmail.com"  Height="25" Width="370" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        </Grid>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="ts3AutoUpdeteServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ts3AutoUpdeteServer"
+        mc:Ignorable="d"
+        Title="Auto rename server" Height="450" Width="1200" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Height="30" Width="30" HorizontalAlignment="Left" Margin="10 0 0 0" Click="Button_Click_Run">
+            <Image Source="pack://application:,,,/Resources/RunBlue111.png" Visibility="Visible"/>
+        </Button>
+        <Button Height="30" Width="30" HorizontalAlignment="Left" Margin="50 0 0 0" Click="Button_Click_Add">
+            <Image Source="pack://application:,,,/Resources/addBlue2.png" Visibility="Visible"/>
+        </Button>
+        <Button Height="30" Width="30" HorizontalAlignment="Left" Margin="90 0 0 0" Click="Button_Click_Edit">
+            <Image Source="pack://application:,,,/Resources/edit1.png" Visibility="Visible"/>
+        </Button>
+        <Button Height="30" Width="30" HorizontalAlignment="Left" Margin="130 0 0 0" Click="Button_Click_Delete">
+            <Image Source="pack://application:,,,/Resources/Garbage2.png" Visibility="Visible"/>
+        </Button>
+        <Button Height="30" Width="30" HorizontalAlignment="Left" Margin="170 0 0 0" Click="Button_Click_Update">
+            <Image Source="pack://application:,,,/Resources/update1.png" Visibility="Visible"/>
+        </Button>
+        <Button Height="30" Width="30" HorizontalAlignment="Left" Margin="210 0 0 0" Click="Button_Click_Settings">
+            <Image Source="pack://application:,,,/Resources/settings1.png" Visibility="Visible"/>
+        </Button>
+        <Button Height="30" Width="30" HorizontalAlignment="Left" Margin="250 0 0 0" Click="Button_Click_Info">
+            <Image Source="pack://application:,,,/Resources/info2.png" Visibility="Visible"/>
+        </Button>
+        <Button FontWeight="Bold" FontSize="18" Height="30" Width="300" HorizontalAlignment="Left" Margin="290 0 0 0" Click="Button_Click_Start">
+            Start AutoUpdate
+        </Button>
+        <TextBlock Name="secondsBlock" HorizontalAlignment="Left" TextAlignment="Center" FontSize="20" Margin="595,5,0,0" TextWrapping="Wrap" Text="0 Seconds" VerticalAlignment="Top" Height="30" Width="387"/>
+
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="dgTableServers" AutoGenerateColumns="False" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=ServerId}" IsReadOnly="True" Header="№" Width="40"/>
+                    <DataGridTextColumn Binding="{Binding Path=Login}" IsReadOnly="True" Header="login" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Password}" IsReadOnly="True" Header="Password" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=ServerIp}" IsReadOnly="True" Header="Server ip" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Name1}" IsReadOnly="True" Header="Name1" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Name2}" IsReadOnly="True" Header="Name2" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=DateUpdate}" IsReadOnly="True" Header="DateUpdate" Width="*"/>
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>
