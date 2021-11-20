@@ -4,3 +4,4 @@
 + The program interface is made using WPF
 + The code was created on C# 
 
+![Auto rename TeamSpeak3 server](/preview.png)
